@@ -1,0 +1,27 @@
+/* .name {
+    color: green;
+} */
+
+#name {
+    color: green;
+}
+
+#name {
+    color: blue;
+}
+
+.clickMeBtn {
+    cursor: pointer;
+}
+
+.clickMeBtn:hover {
+    background-color: rgb(184, 179, 179);
+}
+
+/* h1 {
+    color: red;
+} */
+
+h2 {
+    color: navy;
+}
