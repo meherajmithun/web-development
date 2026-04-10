@@ -1,12 +1,8 @@
 <!doctype html>
 <html>
   <head>
+    <link href="style.css" rel="stylesheet" />
     <title>The basic language of Web : HTML</title>
-    <style>
-      h3 {
-        color: Green;
-      }
-    </style>
   </head>
   <body>
     <!-- <h1>The basic language of the Web : HTML</h1>
@@ -28,7 +24,9 @@
 
     <article>
       <header>
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
         <img
           src="img/laura-jones.jpg"
           alt="Headshot of laura jones"
@@ -103,8 +101,8 @@
 
       <p>Hopefully you learned something new here. See you next time!</p>
       <aside>
-        <h3>Related posts</h3>
-        <ul>
+        <h4>Related posts</h4>
+        <ul id="related">
           <li>
             <img
               src="img/related-1.jpg"
@@ -113,7 +111,7 @@
               width="75"
             /><a href="#">How to Learn Web Development</a>
           </li>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
           <li>
             <img
               src="img/related-2.jpg"
@@ -122,7 +120,7 @@
               width="75"
             /><a href="#">The Unknown Power of CSS</a>
           </li>
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
           <li>
             <img
               src="img/related-3.jpg"
@@ -132,11 +130,13 @@
             />
             <a href="#">Why JavaScript is Awesome</a>
           </li>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </ul>
       </aside>
     </article>
     <!-- <br> -->
-    <footer>Copyright &copy; 2027 by The Code Magazine</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magazine</p>
+    </footer>
   </body>
 </html>
