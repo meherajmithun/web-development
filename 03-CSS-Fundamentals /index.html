@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <link href="style.css" rel="stylesheet" />
     <title>The basic language of Web : HTML</title>
@@ -11,34 +11,37 @@
         <h4>The basic language of the Web : HTML</h4>
         <h5>The basic language of the Web : HTML</h5>
         <h6>The basic language of the Web : HTML</h6> -->
-    <header>
-      <!-- <h1 style="color: yellowgreen">📘 The Code Magazine</h1> -->
-      <h1>📘 The Code Magazine</h1>
-      <div>
-        <a href="blog.html" target="_blank">Blog</a>
-        <a href="#">Challenges</a>
-        <a href="#">FlexBox</a>
-        <a href="#">CSS Grid</a>
-      </div>
-    </header>
+    <div class="container">
+      <header class="main-header">
+        <!-- <h1 style="color: yellowgreen">📘 The Code Magazine</h1> -->
+        <h1>📘 The Code Magazine</h1>
+        <nav>
+          <a href="blog.html" target="_blank">Blog</a>
+          <a href="#">Challenges</a>
+          <a href="#">FlexBox</a>
+          <a href="#">CSS Grid</a>
+        </nav>
+      </header>
 
-    <article>
-      <header>
-        <p id="author">
-          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
-        </p>
+      <header class="post-header">
+        <h2>The basic language of Web : HTML</h2>
         <img
           src="img/laura-jones.jpg"
           alt="Headshot of laura jones"
           height="50"
           width="50"
         />
-        <h2>The Basic Language of the Web: HTML</h2>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
+
         <img
           src="img/post-img.jpg"
           alt="HTML code on the screen"
           height="200"
           width="500"
+          class="post-img"
+          ;
         />
       </header>
 
@@ -100,43 +103,48 @@
       </ul>
 
       <p>Hopefully you learned something new here. See you next time!</p>
-      <aside>
-        <h4>Related posts</h4>
-        <ul id="related">
-          <li>
-            <img
-              src="img/related-1.jpg"
-              alt="A person programming"
-              height="75"
-              width="75"
-            /><a href="#">How to Learn Web Development</a>
-          </li>
-          <p class="related-author">By Jonas Schmedtmann</p>
-          <li>
-            <img
-              src="img/related-2.jpg"
-              alt="Lightning"
-              height="75"
-              width="75"
-            /><a href="#">The Unknown Power of CSS</a>
-          </li>
-          <p class="related-author">By Jim Dillon</p>
-          <li>
-            <img
-              src="img/related-3.jpg"
-              alt="JavaScript code on a screen"
-              height="75"
-              width="75"
-            />
-            <a href="#">Why JavaScript is Awesome</a>
-          </li>
-          <p class="related-author">By Matilda</p>
-        </ul>
-      </aside>
-    </article>
-    <!-- <br> -->
-    <footer>
-      <p id="copyright">Copyright &copy; 2027 by The Code Magazine</p>
-    </footer>
+      <article>
+        <aside>
+          <h4 class="Related">Related posts</h4>
+          <ul id="related">
+            <li>
+              <img
+                src="img/related-1.jpg"
+                alt="A person programming"
+                height="75"
+                width="75"
+              /><a href="#">How to Learn Web Development</a>
+            </li>
+            <p class="related-author">By Jonas Schmedtmann</p>
+            <li>
+              <img
+                src="img/related-2.jpg"
+                alt="Lightning"
+                height="75"
+                width="75"
+              /><a href="#">The Unknown Power of CSS</a>
+            </li>
+            <p class="related-author">By Jim Dillon</p>
+            <li>
+              <img
+                src="img/related-3.jpg"
+                alt="JavaScript code on a screen"
+                height="75"
+                width="75"
+              />
+              <a href="#">Why JavaScript is Awesome</a>
+            </li>
+            <p class="related-author">By Matilda</p>
+          </ul>
+        </aside>
+      </article>
+      <!-- <br> -->
+      <footer>
+        <p id="copyright" class="copyright text">
+          Copyright &copy; 2027 by The Code Magazine
+        </p>
+      </footer>
+    </div>
+    <button>Like</button>
   </body>
 </html>

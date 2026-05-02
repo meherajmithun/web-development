@@ -1,19 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+.Related {
+  text-align: center;
+}
+.nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: sans-serif;
+  color: #1098ad;
+  font-size: 22px;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 h1 {
-  font-size: 20px;
+  font-size: 30px;
   font-style: italic;
   text-transform: uppercase;
+  /* color: rgb(226, 19, 105); */
 }
 h2 {
-  font-size: 40px;
+  font-size: 35px;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 h4 {
   font-size: 20px;
@@ -24,10 +69,13 @@ p {
   font-size: 20px;
   font-family: sans-serif;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 li {
   font-size: 20px;
   font-family: sans-serif;
+  margin-bottom: 10px;
+  margin-left: 50px;
 }
 /* footer p {
   font-size: 16px;
@@ -51,3 +99,98 @@ li {
 #related {
   list-style: none;
 }
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  width: 500px;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+  font-family: sans-serif;
+}
+/* li:nth-child(2) {
+  color: red;
+}
+li:nth-child(odd) {
+  color: green;
+} */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* Resolving conflict */
+/* #copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+} */
+/* .txt {
+  color: yellow;
+}
+footer p {
+  color: green;
+} */
+.post-img {
+  width: 50%;
+  height: auto;
+}
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+button {
+  font-size: 30px;
+  padding: 22px;
+  cursor: pointer;
+  /* top: 0; */
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+h1::first-letter {
+  margin-right: 5px;
+  font-style: normal;
+}
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  font-size: 16px;
+  color: #444;
+  font-weight: bold;
+  background-color: #ffe70e;
+  padding: 5px 10px;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: -20px;
+}
+/* button:hover {
+  background-color: black;
+  color: white;
+} */
