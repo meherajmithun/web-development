@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #353a40;
+        line-height: 1;
+      }
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+        /* background-color: #353a40; */
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .second-item {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        padding: 32px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 32px;
+      }
+      .number,
+      .text {
+        font-size: 24px;
+        font-weight: 500;
+        color: #087f5b;
+      }
+
+      .icon {
+        stroke: #087f5b;
+        height: 24px;
+        width: 24px;
+      }
+      .hidden-box {
+        grid-column: 2;
+      }
+      .hidden-box p {
+        line-height: 1.5;
+        margin-bottom: 24px;
+      }
+      .hidden-box ul {
+        color: #868e96;
+        margin-left: 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .first-item {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 32px;
+        padding: 32px;
+      }
+      .first-item p {
+        color: #353a40;
+      }
+      .third-item {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 32px;
+        padding: 32px;
+      }
+
+      /* .hidden-box li {
+        margin-bottom: 12px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="first-item">
+        <p class="number">01</p>
+        <p class="text">Where are these chair assembled?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="icon"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="second-item">
+        <p class="number">02</p>
+        <p class="text">How long do I have to return my chair?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="icon"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            consequatur, eos in fuga commodi corporis! Dolorem, nesciunt
+            mollitia numquam tenetur magnam incidunt molestias sequi a ex
+            similique harum aspernatur corrupti.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Ad modi aliquid illo eaque nesciunt!</li>
+            <li>Tempora, eaque. Autem laboriosam at nesciunt?</li>
+            <li>
+              Nesciunt placeat odit, voluptas molestias repudiandae esse .
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="third-item">
+        <p class="number">03</p>
+        <p class="text">Do you ship to countires outside the EU?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="icon"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>

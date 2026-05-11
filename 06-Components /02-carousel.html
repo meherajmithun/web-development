@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Accordion component</title>
+    <style>
+      /*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #353a40;
+        line-height: 1;
+      }
+      .carousel {
+        width: 800px;
+        margin: 100px auto;
+        background-color: #087f5b;
+        padding: 32px;
+        padding-left: 86px;
+        border-radius: 8px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 86px;
+      }
+      img {
+        height: 200px;
+        border-radius: 8px;
+        transform: scale(1.5);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+      }
+      .testimonial-text {
+        font-size: 18px;
+        font-weight: 500px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        color: #e6fcf5;
+        /* padding-left: 32px; */
+      }
+      .testimonial-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #c3fae8;
+      }
+      .testimonial-job {
+        font-size: 12px;
+        color: #c3fae8;
+      }
+      .btn {
+        background-color: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+        position: relative;
+      }
+      .btn-icon {
+        height: 24px;
+        width: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="maria.jpg" alt="Maria" />
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores aut
+          consectetur consequatur autem, provident temporibus explicabo deserunt
+          adipisci.
+        </p>
+        <p class="testimonial-author">Maria deee</p>
+        <p class="testimonial-job">Senior Product Manager</p>
+      </blockquote>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+          class="btn-icon"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M9.78 4.22a.75.75 0 0 1 0 1.06L7.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L5.47 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+          class="btn-icon"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
